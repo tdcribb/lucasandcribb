@@ -164,6 +164,47 @@ function create_initial_post_types() {
 }
 add_action( 'init', 'create_initial_post_types', 0 ); // highest priority
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	
+	$args1 = array(
+		'labels' => array(
+		'name' => __( 'Services' ),
+		'singular_name' => __( 'Service' )
+	),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'services'),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'price' )
+	);
+
+	$args2 = array(
+		'labels' => array(
+		'name' => __( 'Gallery' ),
+		'singular_name' => __( 'Gallery' )
+	),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'gallery'),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'price' )
+	);
+	
+	register_post_type( 'services', $args1);
+	register_post_type( 'gallery', $args2);
+	// register_post_type( 'history', $args2);
+	
+	// register_taxonomy_for_object_type('post_tag', 'offerings');
+	
+	register_taxonomy_for_object_type('category', 'services');
+	register_taxonomy_for_object_type('category', 'gallery');
+	
+	register_taxonomy_for_object_type('post_tag', 'page');
+	register_taxonomy_for_object_type('category', 'page');
+	
+}
+add_theme_support( 'post-thumbnails', array( 'post' , 'page' ) ); // Add it for posts
+
+
 /**
  * Retrieve attached file path based on attachment ID.
  *
