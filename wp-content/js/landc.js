@@ -2,6 +2,10 @@ $(document).ready(function() {
 
 	$('#page').fadeIn(1000);
 
+	$('.service-content .wpuf-attachments').each(function() {
+		$(this).remove();
+	});
+
 	$('.twitter').mouseenter(function() {
 		$('.t-white').hide();
 		$('.t-grey').show();

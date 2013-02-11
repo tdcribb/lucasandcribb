@@ -34,6 +34,8 @@ body {padding:0px !important;}
 #branding #access ul li#menu-item-10 {border-right:none;}
 #access .current-menu-item > a, #access .current-menu-ancestor > a, #access .current_page_item > a, #access .current_page_ancestor > a {text-transform:uppercase;}
 
+.flexible-frontend-login .ffl-popup-content {background:#000 !important;}
+
 #header-divider {position:relative; float:left; bottom:0px; left:50px; max-width:900px; width:100%; height:1px; background:#efefef;}
 
 
@@ -59,11 +61,11 @@ footer {background:#000;}
 
 #main #content .entry-content {color:#fff; padding-top:0px;}
 
-#hp-slider {position:relative; float:left; max-width:450px; margin-left:50px; min-width:350px; text-align:center;}
+#hp-slider {position:relative; float:left; width:450px; margin-left:50px; text-align:center;}
 .mainTable, .mainTable #mainscollertd, .mainTable #mainscollertd .mainSliderDiv {width:340px !important;}
 .page-template-homepage-php #content article .wpuf-attachments {display:none;}
 .portfolio-slideshow .slideshow-content img {padding:7px !important; border:1px ridge #fff !important;}
-.slideshow-wrapper .pscarousel {padding-left:8px;}
+.slideshow-wrapper .pscarousel {padding-left:18px;}
 
 
 /* *****SERVICES***** */

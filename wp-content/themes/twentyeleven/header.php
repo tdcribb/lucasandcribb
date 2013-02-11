@@ -71,6 +71,7 @@
 </script>
 
 <link rel="stylesheet" type="text/css" media="all" href="/wp-content/css/landc.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/css/iphone.css" />
 <script src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/js/landc.js"></script>
 
 </head>
