@@ -85,7 +85,7 @@
 
 				<div id="logo">
 					<a href="/">
-						<img id="logo-img" src="/wp-content/images/landc_logo_white.png" />
+						<img id="logo-img" src="/wp-content/images/header/logo_white.png" />
 					</a>
 				</div>
 			</div>
